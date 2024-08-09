@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-top: 4px solid blue;
+            border-bottom: 4px solid blue;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        #project-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            max-width: 800px;
+        }
+        #project-list li {
+            background-color: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border: 2px solid blue;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #project-list a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            display: block;
+        }
+        #project-list a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 4px solid blue;
+            border-bottom: 8px solid blue;
+            margin-top: 20px;
+        }
+        footer nav {
+            margin-bottom: 10px;
+        }
+        footer nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .social-media a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .social-media img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>My Projects</header>
+    <main>
+        <h1>List of Projects</h1>
+        <ul id="project-list">
+            <!-- Projects will be listed here -->
+            <li><a href="project1.html">Project 1: Personal Portfolio</a></li>
+            <li><a href="project2.html">Project 2: E-commerce Website</a></li>
+            <li><a href="project3.html">Project 3: Blog Platform</a></li>
+            <li><a href="project4.html">Project 4: Coding Project List</a></li>
+            <li><a href="project5.html">Project 5: Another Blog Platform</a></li>
+            <!-- Add more projects as needed -->
+        </ul>
+    </main>
+    <footer>
+        <nav>
+            <a href="journy_of_life.html">Home</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+        <div class="social-media">
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/invites/contact/?igsh=qixsaoivl41n&utm_content=v1b3tv9"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

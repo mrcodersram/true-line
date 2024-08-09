@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work With Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-top: 4px solid blue;
+            border-bottom: 4px solid blue;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border: 4px solid blue;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="file"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button[type="submit"] {
+            background-color: blue;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            background-color: darkblue;
+        }
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 4px solid blue;
+            border-bottom: 8px solid blue;
+            margin-top: 20px;
+        }
+        footer nav {
+            margin-bottom: 10px;
+        }
+        footer nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .social-media a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .social-media img {
+            width: 20px;
+            height: 20px;
+        }
+        button[type="submit"] {
+            background-color: blue;
+            color: #fff;
+            padding: 15px 25px; /* Increased padding for better visibility */
+            border: 2px solid darkblue; /* Added border to make it stand out */
+            border-radius: 5px;
+            font-size: 20px; /* Increased font size for better readability */
+            cursor: pointer;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            display: block; /* Ensure it takes up the available space */
+            margin: 0 auto; /* Center the button */
+        }
+        
+        button[type="submit"]:hover {
+            background-color: darkblue;
+            border-color: blue; /* Change border color on hover for better effect */
+        }
+        
+    </style>
+</head>
+<body>
+    <header>Work With Us</header>
+    <main>
+        <h1>Join Our Team</h1>
+        <form action="submit_form.php" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name here :" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email here :" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number :" required>
+            
+            <label for="position">Position Applied For:</label>
+            <input type="text" id="position" name="position" placeholder="Enter your position :" required>
+            
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume"required>
+            
+            <label for="message">Why do you want to work with us?</label>
+            <textarea id="message" name="message" rows="4" placeholder="Type your own comments here :" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="social-media">
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/invites/contact/?igsh=qixsaoivl41n&utm_content=v1b3tv9"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="images/tiktok.png" alt="TikTok"></a>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
