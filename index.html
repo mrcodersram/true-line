@@ -6,17 +6,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex World</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-image: url('images/3.jpg'); /* Adjusted path for your background image */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .typing {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            border-radius: 5px;
+            color: #fff;
+            background: #00ffff;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .buttons a:hover {
+            background: #00cccc;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer nav a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .end {
+            margin-top: 20px;
+        }
+
+        /* Login Box Styles */
+        #login {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 300px;
+            max-width: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #login h2 {
+            margin-top: 0;
+            color: #00ffff;
+        }
+
+        #login input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #00ffff;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        #login button {
+            background-color: #00ffff;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        #login button:hover {
+            background-color: #00cccc;
+            transform: scale(1.05);
+        }
+
+        #content {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #content h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        #content img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #fff;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
+    <div id="login">
+        <h2>Enter Password</h2>
+        <input type="password" id="password" placeholder="Enter password" required>
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+
+    <div id="content">
+        <h1>Welcome to Alex World!</h1>
+        <p>Explore my journey in coding, web development, and ethical hacking.</p>
+        <img src="images/1.jpg" alt="My Picture">
+    </div>
+
     <header>Journey of My Life | Alex World</header>
     <main>
         <div class="image-container">
             <a href="secret_web.html"><img src="images/1.jpg" alt="My Picture"></a>
         </div>
         <div class="content">
-            <p id="typing-text" class="typing">Welcome to my personal space ! </p>
-            <p>Explore my journey in coding, web sites developing, and ethical hacking.</p>
+            <p id="typing-text" class="typing">Welcome to my personal space!</p>
+            <p>Explore my journey in coding, web development, and ethical hacking.</p>
             <div class="buttons">
                 <a href="projects.html" target="_blank" class="btn">PROJECTS</a>
                 <a href="blog.html" target="_blank" class="btn">BLOG</a>
@@ -39,10 +197,23 @@
             <a href="#"><img src="images/tiktok.png" alt="TikTok">TikTok</a>
         </div>
         <div class="end">
-            <p>&copy; copyright 2024 All rights reserved !</p>
+            <p>&copy; copyright 2024 All rights reserved!</p>
         </div>
     </footer>
     <script src="Js/script.js" defer></script>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById('password').value;
+            var correctPassword = 'ALEX@1827'; // Replace with your desired password
+
+            if (password === correctPassword) {
+                document.getElementById('login').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        }
+    </script>
 </body>
 
 </html>
