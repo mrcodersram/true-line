@@ -64,7 +64,7 @@ main {
 .content p {
   font-size: 18px;
   margin-top: 10px;
-  color: blue;
+  color: yellow;
   font-weight: bold;
 }
 
@@ -117,7 +117,7 @@ footer .social-media a img {
 }
 .end{
   font-weight: bold;
-  color: blue;
+  color: yellow;
 }
 
 /* Typing animation and cursor blink effect */
@@ -127,7 +127,7 @@ footer .social-media a img {
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid black; /* Cursor effect */
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 10s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
